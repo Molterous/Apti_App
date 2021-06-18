@@ -26,7 +26,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         setContentView(R.layout.activity_quiz_question)
 
         if(data==1) {
-            mQuestionList = stackQuiz
+            mQuestionList = ArrayQuiz
         }
         else if(data==2)
         {
@@ -39,6 +39,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         tv_option_three.setOnClickListener(this)
         tv_option_four.setOnClickListener(this)
         btn_submit.setOnClickListener(this)
+
 
 
 
@@ -64,10 +65,16 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         tv_option_two.text = questions.optionTwo
         tv_option_three.text = questions.optionThree
         tv_option_four.text = questions.optionFour
+        hint.text=questions.hint
+
+        hint.visibility=View.GONE
+
 
 
     }
     override fun onClick(v : View?) {
+        //hint.visibility=View.VISIBLE
+
         if (v!= null) {
             when (v.id) {
                 R.id.tv_option_one -> {
@@ -84,11 +91,14 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                     selectedOptionView(tv_option_four, 4)
                 }
 
+
                 R.id.btn_submit -> {
                     if (mSelectedOptionPosition == 0) {
                         mCurrentPosition++
                         when {
                             mCurrentPosition <= mQuestionList!!.size -> {
+
+
                                 setQuestion()
                             }
                             else -> {
@@ -112,14 +122,25 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                             R.drawable.correct_option_border_bg
                         )
                         if (mCurrentPosition == mQuestionList!!.size) {
+                            hint.visibility=View.VISIBLE
                             btn_submit.text = "Finish"
+
+                            //hint.visibility=View.GONE
+
                         } else {
+                            hint.visibility=View.VISIBLE
                             btn_submit.text = "Next Question"
+
+                          //  hint.visibility=View.GONE
+
                         }
                         mSelectedOptionPosition = 0
 
 
                     }
+
+                   // hint.visibility=View.VISIBLE
+
                 }
             }
         }
@@ -157,6 +178,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
     private fun answerView(answer:Int,drawableView:Int){
         when(answer){
             1->{
+
                 tv_option_one.background= ContextCompat.getDrawable(this,drawableView)
 
             }
@@ -173,5 +195,6 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
             }
         }
+
     }
 }

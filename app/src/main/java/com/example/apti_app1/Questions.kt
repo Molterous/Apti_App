@@ -9,5 +9,9 @@ data class Questions(
     val optionTwo: String,
     val optionThree: String,
     val optionFour: String,
-    val correctOption: Int
+
+    val correctOption: Int,
+    val hint:String
 )
+
+//modal
