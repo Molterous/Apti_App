@@ -14,4 +14,3 @@ data class Questions(
     val hint:String
 )
 
-//modal

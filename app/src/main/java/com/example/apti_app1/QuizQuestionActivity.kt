@@ -38,7 +38,9 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         tv_option_two.setOnClickListener(this)
         tv_option_three.setOnClickListener(this)
         tv_option_four.setOnClickListener(this)
+
         btn_submit.setOnClickListener(this)
+
 
 
 
@@ -48,6 +50,8 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
     //46 min
     private fun setQuestion() {
+
+
 
         val questions=mQuestionList!!.get(mCurrentPosition-1)
         defautOptionView()
@@ -73,9 +77,20 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
     }
     override fun onClick(v : View?) {
+        //test 2.
+
+
+        tv_option_four?.isEnabled=true
+        tv_option_three?.isEnabled=true
+        tv_option_one?.isEnabled=true
+        tv_option_two?.isEnabled=true
+
+
+
         //hint.visibility=View.VISIBLE
 
         if (v!= null) {
+
             when (v.id) {
                 R.id.tv_option_one -> {
                     selectedOptionView(tv_option_one, 1)
@@ -93,6 +108,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
 
                 R.id.btn_submit -> {
+
                     if (mSelectedOptionPosition == 0) {
                         mCurrentPosition++
                         when {
@@ -109,6 +125,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                                 ).show()
                                 val intent = Intent(this, MainActivity::class.java)
                                 startActivity(intent)
+                                finish()
                             }
                         }
                     } else {
@@ -123,12 +140,27 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                         )
                         if (mCurrentPosition == mQuestionList!!.size) {
                             hint.visibility=View.VISIBLE
+
+
+
+                            tv_option_four?.isEnabled=false
+                            tv_option_three?.isEnabled=false
+                            tv_option_one?.isEnabled=false
+                            tv_option_two?.isEnabled=false
+
                             btn_submit.text = "Finish"
 
                             //hint.visibility=View.GONE
 
                         } else {
+
                             hint.visibility=View.VISIBLE
+
+                            tv_option_four?.isEnabled=false
+                            tv_option_three?.isEnabled=false
+                            tv_option_one?.isEnabled=false
+                            tv_option_two?.isEnabled=false
+
                             btn_submit.text = "Next Question"
 
                           //  hint.visibility=View.GONE
@@ -139,6 +171,9 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
                     }
 
+                    //test 1.
+
+
                    // hint.visibility=View.VISIBLE
 
                 }
@@ -146,6 +181,11 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         }
     }
     private fun defautOptionView() {
+//        tv_option_four?.isEnabled= true
+//        tv_option_three?.isEnabled= true
+//        tv_option_one?.isEnabled= true
+//        tv_option_two?.isEnabled= true
+
         val options=ArrayList<TextView>()
         options.add(0,tv_option_one)
         options.add(1,tv_option_two)
@@ -194,6 +234,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                 tv_option_four.background= ContextCompat.getDrawable(this,drawableView)
 
             }
+
         }
 
     }

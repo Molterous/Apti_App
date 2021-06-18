@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
 
         }
 
+
+
         btn2.setOnClickListener {
             val data:Int=2
 
