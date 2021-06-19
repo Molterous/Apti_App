@@ -11,7 +11,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="290dp"
+        android:layout_height="270dp"
         android:src="@drawable/brain"
         />
 
@@ -61,13 +61,17 @@
         >
 
         <TextView
+            android:shadowColor="#050000"
+            android:shadowDx="1.5"
+            android:shadowDy="1.3"
+            android:shadowRadius="1.6"
             android:fontFamily="@font/roboto_bold"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Percentage"
+            android:text="Number System"
             />
 
         <LinearLayout
@@ -128,24 +132,29 @@
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="#2962FF"
         app:cardCornerRadius="8dp"
+        android:id="@+id/btn2"
         android:layout_height="70dp"
         >
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:id="@+id/btn2"
+
 
             >
 
             <TextView
+                android:shadowColor="#050000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Time And Speed"
+                android:text="Train"
                 />
 
             <LinearLayout
@@ -154,6 +163,7 @@
                 android:orientation="horizontal"
                 >
                 <TextView
+
                     android:paddingLeft="120dp"
 
                     android:textColor="#FFFFFF"
@@ -208,6 +218,7 @@
         android:layout_marginTop="10dp"
         app:cardBackgroundColor="#64DD17"
         app:cardCornerRadius="8dp"
+        android:id="@+id/btn3"
         android:layout_height="70dp"
         >
         <LinearLayout
@@ -218,13 +229,17 @@
             >
 
             <TextView
+                android:shadowColor="#050000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Pipe and Cistern"
+                android:text="Time and work"
                 />
 
             <LinearLayout
@@ -285,6 +300,7 @@
             android:layout_marginTop="10dp"
             app:cardBackgroundColor="#AA00FF"
             app:cardCornerRadius="8dp"
+            android:id="@+id/btn4"
             android:layout_height="70dp"
             >
             <LinearLayout
@@ -295,6 +311,10 @@
                 >
 
                 <TextView
+                    android:shadowColor="#050000"
+                    android:shadowDx="1.5"
+                    android:shadowDy="1.3"
+                    android:shadowRadius="1.6"
                     android:fontFamily="@font/roboto_bold"
                     android:textColor="#FFFFFF"
                     android:textSize="30sp"
@@ -358,6 +378,7 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="10dp"
+        android:id="@+id/btn5"
         app:cardBackgroundColor="#FF6D00"
         app:cardCornerRadius="8dp"
         android:layout_height="70dp"
@@ -370,13 +391,17 @@
             >
 
             <TextView
+                android:shadowColor="#050000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Number Series"
+                android:text="Percentage"
                 />
 
             <LinearLayout
@@ -433,7 +458,8 @@
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
         android:layout_marginTop="10dp"
-        app:cardBackgroundColor="#FFD600"
+        android:id="@+id/btn6"
+        app:cardBackgroundColor="#C51162"
         app:cardCornerRadius="8dp"
         android:layout_height="70dp"
         >
@@ -445,13 +471,17 @@
             >
 
             <TextView
+                android:shadowColor="#050000"
+                android:shadowDx="1.5"
+                android:shadowDy="1.3"
+                android:shadowRadius="1.6"
                 android:fontFamily="@font/roboto_bold"
                 android:textColor="#FFFFFF"
                 android:textSize="30sp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Age Problems"
+                android:text="Calendar"
                 />
 
             <LinearLayout
@@ -509,6 +539,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginRight="15dp"
             android:layout_marginTop="10dp"
+            android:id="@+id/btn7"
             app:cardBackgroundColor="#6200EA"
             app:cardCornerRadius="8dp"
             android:layout_height="70dp"
@@ -527,7 +558,7 @@
                     android:layout_gravity="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Inequalities"
+                    android:text="Clock"
                     />
 
                 <LinearLayout
@@ -582,7 +613,249 @@
         </androidx.cardview.widget.CardView>
 
 
-<!--    </ScrollView>-->
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn8"
+            app:cardBackgroundColor="#64DD17"
+            app:cardCornerRadius="8dp"
+            android:layout_height="70dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ratio and Proportion"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:paddingLeft="120dp"
+
+                        android:textColor="#FFFFFF"
+
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Difficulty"
+                        />
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_half"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_empty"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn9"
+            app:cardBackgroundColor="#FF6D00"
+            app:cardCornerRadius="8dp"
+            android:layout_height="70dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Area"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:paddingLeft="120dp"
+
+                        android:textColor="#FFFFFF"
+
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Difficulty"
+                        />
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_half"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_empty"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/btn10"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="#304FFE"
+            app:cardCornerRadius="8dp"
+            android:layout_height="70dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+
+                >
+
+                <TextView
+                    android:fontFamily="@font/roboto_bold"
+                    android:textColor="#FFFFFF"
+                    android:textSize="30sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Probability"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:paddingLeft="120dp"
+
+                        android:textColor="#FFFFFF"
+
+                        android:fontFamily="@font/roboto_light"
+                        android:textSize="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Difficulty"
+                        />
+                    <ImageView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_yellow"
+                        />
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_half"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/star_empty"
+                        />
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+            <!--    </ScrollView>-->
         </LinearLayout>
 
 

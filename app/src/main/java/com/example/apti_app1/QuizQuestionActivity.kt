@@ -26,11 +26,46 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         setContentView(R.layout.activity_quiz_question)
 
         if(data==1) {
-            mQuestionList = ArrayQuiz
+            mQuestionList = NumberSystem
         }
         else if(data==2)
         {
-            mQuestionList= ArrayQuiz
+            mQuestionList= Trains
+        }
+
+        else if(data==3)
+        {
+            mQuestionList= TimeWork
+        }
+        else if(data==4)
+        {
+            mQuestionList= profitLoss
+        }
+        else if(data==5)
+        {
+            mQuestionList= Percentage
+        }
+        else if(data==6)
+        {
+            mQuestionList= Calendar
+        }
+        else if(data==7)
+        {
+            mQuestionList= Clock
+        }
+        else if(data==8)
+        {
+            mQuestionList= RatioProportion
+        }
+
+        else if(data==9)
+        {
+            mQuestionList= Area
+        }
+
+        else if(data==10)
+        {
+            mQuestionList= Probability
         }
         setQuestion()
 
@@ -71,6 +106,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
         tv_option_four.text = questions.optionFour
         hint.text=questions.hint
 
+        explain.visibility=View.GONE
         hint.visibility=View.GONE
 
 
@@ -120,7 +156,7 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                             else -> {
                                 Toast.makeText(
                                     this,
-                                    "You have successfully completed task",
+                                    "You have successfully completed Quiz",
                                     Toast.LENGTH_SHORT
                                 ).show()
                                 val intent = Intent(this, MainActivity::class.java)
@@ -139,6 +175,8 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                             R.drawable.correct_option_border_bg
                         )
                         if (mCurrentPosition == mQuestionList!!.size) {
+                            explain.visibility=View.VISIBLE
+
                             hint.visibility=View.VISIBLE
 
 
@@ -153,6 +191,8 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                             //hint.visibility=View.GONE
 
                         } else {
+
+                            explain.visibility=View.VISIBLE
 
                             hint.visibility=View.VISIBLE
 
