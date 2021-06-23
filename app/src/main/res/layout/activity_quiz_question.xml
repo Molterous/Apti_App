@@ -130,7 +130,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="hello bitches"
+            android:text="hello"
             android:textSize="22sp"
             android:textStyle="bold"
             android:visibility="gone"

@@ -16,12 +16,6 @@
         />
 
 
-<!--    <ScrollView-->
-<!--        android:layout_width="fill_parent"-->
-<!--       android:layout_weight="1"-->
-<!--        android:layout_height="0dp"-->
-<!--        >-->
-
 
     <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -439,7 +433,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/star_half"
+                    android:src="@drawable/star_yellow"
                     />
 
                 <ImageView
@@ -519,7 +513,7 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/star_half"
+                    android:src="@drawable/star_empty"
                     />
 
                 <ImageView
@@ -596,7 +590,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_half"
+                        android:src="@drawable/star_empty"
                         />
 
                     <ImageView
@@ -673,12 +667,12 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_yellow"
+                        android:src="@drawable/star_empty"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_half"
+                        android:src="@drawable/star_empty"
                         />
 
                     <ImageView
@@ -754,12 +748,12 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_yellow"
+                        android:src="@drawable/star_half"
                         />
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_half"
+                        android:src="@drawable/star_empty"
                         />
 
                     <ImageView
@@ -839,7 +833,7 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/star_half"
+                        android:src="@drawable/star_yellow"
                         />
 
                     <ImageView
