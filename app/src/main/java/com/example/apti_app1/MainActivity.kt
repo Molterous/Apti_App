@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
 
-            //yaha pr data sharing krni h,
+            //yaha pr data sharing krni
+            //chack de phatte
 
 
         }
