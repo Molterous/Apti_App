@@ -14,6 +14,8 @@ import kotlinx.android.synthetic.main.activity_quiz_question.*
 
 class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
 
+    private var answercount=10
+    private var correctanscount=0
 
     private var mCurrentPosition:Int=1
     private var mQuestionList:List<Questions>?=null
@@ -154,12 +156,15 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                                 setQuestion()
                             }
                             else -> {
-                                Toast.makeText(
-                                    this,
-                                    "You have successfully completed Quiz",
-                                    Toast.LENGTH_SHORT
-                                ).show()
-                                val intent = Intent(this, MainActivity::class.java)
+//                                Toast.makeText(
+//                                    this,
+//                                    "You have successfully completed Quiz with a score of $correctanscount",
+//                                    Toast.LENGTH_SHORT
+//                                ).show()
+
+
+                                val intent = Intent(this, scoreActivity::class.java)
+                                intent.putExtra("ExtraData",correctanscount)
                                 startActivity(intent)
                                 finish()
                             }
@@ -167,9 +172,16 @@ class QuizQuestionActivity : AppCompatActivity() , View.OnClickListener{
                     } else {
                         val question = mQuestionList?.get(mCurrentPosition - 1)
                         if (question!!.correctOption != mSelectedOptionPosition) {
+
+                            answercount--
                             answerView(mSelectedOptionPosition,
                                 R.drawable.wrong_option_border_bg
+
                             )
+                        }
+                        if(question!!.correctOption==mSelectedOptionPosition)
+                        {
+                            correctanscount++
                         }
                         answerView(question.correctOption,
                             R.drawable.correct_option_border_bg

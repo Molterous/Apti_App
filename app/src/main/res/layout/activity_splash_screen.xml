@@ -9,6 +9,7 @@
     tools:context=".SplashScreen">
 
     <ImageView
+        android:layout_marginTop="70dp"
         android:id="@+id/iv_note"
         android:layout_width="match_parent"
         android:layout_height="420dp"
@@ -23,7 +24,7 @@
 
         android:layout_gravity="center|bottom"
         android:fontFamily="@font/amita_bold"
-        android:paddingTop="80dp"
+        android:paddingTop="40dp"
         android:shadowColor="#F3EBEB"
 
         android:shadowDx="1.5"

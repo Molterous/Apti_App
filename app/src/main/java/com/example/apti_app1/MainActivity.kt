@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
+            finish()
             //yaha pr data sharing krni h,
 
 
@@ -49,6 +51,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -62,6 +65,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -75,6 +79,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -89,6 +94,7 @@ class MainActivity : AppCompatActivity() {
 
             startActivity(intent)
 
+            finish()
             //yaha pr data sharing krni h,
 
 
@@ -101,6 +107,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -114,6 +121,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -127,6 +135,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -140,6 +149,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
@@ -153,6 +163,7 @@ class MainActivity : AppCompatActivity() {
             intent.putExtra("ExtraData",data)
 
             startActivity(intent)
+            finish()
 
             //yaha pr data sharing krni h,
 
